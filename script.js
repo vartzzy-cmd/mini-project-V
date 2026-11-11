@@ -8,16 +8,18 @@ maxZoom: 19
 }
 ).addTo(map);
 
-const marker = L.marker([8.36839, 124.86667]).addTo(map);
-marker.bindPopup("<b>Manolo Fortich</b><p>Welcome to Bukidnon!</p>"
+const marker = L.marker([ 8.40298, 124.88880 ]).addTo(map);
+marker.bindPopup("<b>Lingion</b><p>Welcome to Lingion</p>"
 );
 
-L.circle([8.36839, 124.86667], {
+
+L.circle([8.39965, 124.88777], {
 color: "blue",
 fillColor: "#30a3ec",
 fillOpacity: 0.3,
-radius: 500
+radius: 2000
 }).addTo(map);
+
 
 map.on("click", function(event) {
 const lat = event.latlng.lat;
@@ -33,10 +35,9 @@ L.popup()
 });
 
 const locations = [
-{ name: "School", lat: 8.35982, lng: 124.86825 },
-{ name: "Hospital", lat: 8.38473, lng: 124.83906 },
-{ name: "Vart Home", lat: 8.41616, lng:124.89658  }
-{ name: "Ligion", lat: 8.39965, lng:124.88777  }
+{ name: "School", lat: 8.40124, lng: 124.88721 },
+{ name: "Vart Home", lat: 8.41616, lng:124.89658  },
+
 
 
 ];
