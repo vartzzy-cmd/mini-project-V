@@ -1,11 +1,9 @@
 const map = L.map("map").setView([8.38214, 124.86737], 13
 );
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-{
- attribution: '&copy; <ahref="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-maxZoom: 19
-}
-).addTo(map);
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    maxZoom: 19
+});
 
 const marker = L.marker([ 8.40298, 124.88880 ]).addTo(map);
 marker.bindPopup("<b>Lingion</b><p>Welcome to Lingion</p>"
